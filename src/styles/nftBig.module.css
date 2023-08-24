@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.first {
+  flex: 1.5;
+}
+
+.second,
+.third {
+  flex: 3;
+}
+
+.second {
+  padding-top: 100px;
+}
+
+.second h1 {
+  font-size: 3vw;
+}
+
+.second p {
+  font-size: 1.4vw;
+  line-height: 30px;
+  margin: 30px auto;
+}
+
+.container a {
+  text-decoration: none;
+  background: #222222ab;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: aqua;
+}
+
+.hex {
+  float: right;
+  rotate: 240deg;
+  aspect-ratio: 1;
+  width: 110px;
+}
+
+.third {
+  position: relative;
+}
+
+.dashed,
+.nftHex,
+.bee {
+  position: absolute;
+}
+
+.dashed {
+  rotate: 90deg;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  aspect-ratio: 1;
+  height: 100px;
+}
+
+.nftHex {
+  top: 150px;
+  right: 20%;
+  aspect-ratio: 1.24/1;
+  width: 25vw;
+}
+
+.bee {
+  aspect-ratio: 1;
+  height: 150px;
+  top: 35px;
+  left: 25px;
+  rotate: -10deg;
+  z-index: -1;
+}

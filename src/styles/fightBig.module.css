@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  background-image: linear-gradient(
+      to left,
+      black,
+      transparent,
+      transparent,
+      black
+    ),
+    linear-gradient(to bottom, black, transparent, transparent, black),
+    url("../assets/imgs/macro-bee-head-black-background.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.right h1 {
+  font-size: 5vw;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.right code {
+  font-size: 1.5vw;
+  color: darkgrey;
+}
+
+.bigBee {
+  aspect-ratio: 1;
+  height: 100vh;
+}
+
+.dashed,
+.bee,
+.right div {
+  position: absolute;
+}
+
+.right div {
+  /* background: #333; */
+  right: 0;
+  top: 0;
+  width: 150px;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.dashed {
+  rotate: 90deg;
+  top: 0;
+  right: 0;
+  /* height: 100%; */
+  aspect-ratio: 1;
+  width: 300px;
+  z-index: -2;
+}
+
+.bee {
+  bottom: -10px;
+  left: -3px;
+  rotate: 60deg;
+  aspect-ratio: 1;
+  width: 70px;
+  z-index: -1;
+}

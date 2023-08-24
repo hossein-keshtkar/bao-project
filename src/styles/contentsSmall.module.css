@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.hiveContainer,
+.dashedBeeContainer {
+  position: relative;
+}
+
+.hive {
+  top: 0;
+  right: 0;
+}
+
+.dashedBee,
+.topHiveBee,
+.botHiveBee,
+.hexagon,
+.hexBee,
+.hive {
+  position: absolute;
+}
+
+.topHiveBee {
+  transform: rotate(80deg);
+  height: 30px;
+  width: 30px;
+  top: -50px;
+  right: 30px;
+}
+
+.botHiveBee {
+  transform: rotate(-90deg);
+  bottom: -170px;
+  right: 170px;
+}
+
+.hexContainer {
+  position: relative;
+  height: 140px;
+}
+
+.hexagon {
+  right: 0px;
+  height: 160px;
+  bottom: 0px;
+}
+
+.hexBee {
+  bottom: 90px;
+  height: 40px;
+  width: 40px;
+  right: 140px;
+}
+
+.dashedBee {
+  right: 0;
+  top: -250px;
+}

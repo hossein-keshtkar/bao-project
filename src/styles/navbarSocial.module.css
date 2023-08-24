@@ -1,0 +1,19 @@
+.container li {
+  list-style: none;
+}
+
+.container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container li {
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,67 @@
+.container {
+  height: 70vh;
+  background-image: linear-gradient(
+      to bottom,
+      black,
+      #00000065,
+      #00000065,
+      black
+    ),
+    url(../assets/imgs/hex-group.svg);
+
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bao {
+  width: 70vw;
+  aspect-ratio: 2.72/1;
+}
+
+.imgs,
+.bee,
+.dashed {
+  position: absolute;
+  aspect-ratio: 1;
+}
+
+.imgs {
+  top: 0;
+  left: 0;
+  width: 20vw;
+}
+
+.dashed {
+  height: 20vw;
+  left: -10%;
+  top: -20%;
+  z-index: 0;
+}
+
+.bee {
+  bottom: 5%;
+  right: 0;
+  z-index: 1;
+  height: 5vw;
+  rotate: 25deg;
+}
+
+.leftFlower,
+.rightFlower {
+  position: absolute;
+  bottom: 0;
+  aspect-ratio: 2/1;
+  width: 15vw;
+}
+
+.leftFlower {
+  left: 10%;
+}
+
+.rightFlower {
+  right: 10%;
+}

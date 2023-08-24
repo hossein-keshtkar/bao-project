@@ -1,0 +1,23 @@
+.container,
+.container a {
+  display: flex;
+  align-items: center;
+}
+
+.container a {
+  justify-content: center;
+  transition: all 0.5s ease;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.container a:hover {
+  background: #000;
+  box-shadow: 1px 1px 10px #ffffffa7;
+}
+
+.container img {
+  height: 1.1vw;
+  width: 1.1vw;
+}

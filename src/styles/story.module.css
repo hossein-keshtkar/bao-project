@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  margin-bottom: 15px;
+}
+
+.smallBee,
+.bigBee,
+.middleBee {
+  position: absolute;
+}
+
+.smallBee {
+  transform: rotate(90deg);
+  height: 25px;
+  width: 25px;
+  top: -25px;
+  right: 75px;
+}
+
+.bigBee {
+  transform: rotate(52deg);
+  height: 60px;
+  width: 60px;
+  top: -10px;
+  left: -85px;
+}
+
+.middleBee {
+  bottom: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.bottomBee {
+  bottom: 90px;
+  height: 40px;
+  width: 40px;
+  right: 140px;
+}
+
+.dashed {
+  position: absolute;
+  z-index: -1;
+  right: 40px;
+  width: 340px;
+  height: 4000px;
+}

@@ -1,0 +1,23 @@
+.container {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.bee {
+  position: absolute;
+  transform: rotate(42deg);
+  left: -65px;
+  height: 55px;
+  width: 55px;
+}
+
+.flowers {
+  display: flex;
+  justify-content: center;
+}
+
+.flowers img {
+  height: 73.99px;
+  width: 158.21px;
+}

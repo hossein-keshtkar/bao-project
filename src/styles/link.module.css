@@ -1,0 +1,35 @@
+.container {
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  flex-direction: row;
+  width: 100%;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.container a {
+  border-radius: 50px;
+  background: orange;
+  text-decoration: none;
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+}
+
+.container,
+.container a {
+  display: flex;
+  align-items: center;
+}
+
+.container a {
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.container a:hover {
+  scale: 1.1;
+}

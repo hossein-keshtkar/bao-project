@@ -1,0 +1,26 @@
+.container {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 16px;
+}
+
+.container li {
+  list-style: none;
+  background: #fff;
+  border-radius: 5px;
+  height: 3px;
+  width: 27px;
+}
+
+.isClicked:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: none;
+  }
+}

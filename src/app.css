@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  font-family: Tahoma;
+}
+
+h2 {
+  position: relative;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+p {
+  color: thistle;
+  font-size: 14px;
+  line-height: 23px;
+  padding-right: 10px;
+  margin: 0;
+}

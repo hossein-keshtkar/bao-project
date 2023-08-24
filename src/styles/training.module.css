@@ -1,0 +1,18 @@
+.container {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  position: relative;
+  font-weight: 600;
+}
+
+.bee {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: -35px;
+  left: -50px;
+  rotate: 25deg;
+}

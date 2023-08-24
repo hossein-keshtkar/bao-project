@@ -1,0 +1,51 @@
+.container,
+.beeContainer {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.beeContainer {
+  width: 320px;
+  height: 30px;
+}
+
+.mediaContainer {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftFlower,
+.rightFlower,
+.bee {
+  position: absolute;
+}
+
+.rightFlower {
+  right: 60px;
+  bottom: 0;
+}
+
+.leftFlower {
+  left: 50px;
+  bottom: 0;
+}
+
+.bee {
+  rotate: -90deg;
+  top: 26px;
+  right: 33px;
+}
+
+.bao {
+  width: 100%;
+  aspect-ratio: 2/0.9;
+  max-width: 900px;
+}

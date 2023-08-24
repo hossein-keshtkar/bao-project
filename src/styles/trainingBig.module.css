@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 3vw;
+}
+
+.container p {
+  margin: 40px auto 70px auto;
+  width: 70%;
+  font-size: 1.5vw;
+  line-height: 30px;
+}
+
+.container a {
+  text-decoration: none;
+  color: aqua;
+  background: #222222ab;
+  padding: 10px 30px;
+  border-radius: 5px;
+}

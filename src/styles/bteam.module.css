@@ -1,0 +1,49 @@
+.container {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 170px;
+}
+
+.container::first-line {
+  font-size: 10px;
+}
+
+.container h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.imgContainer {
+  height: 250px;
+  position: relative;
+}
+
+.fistBee,
+.secBee,
+.shadow,
+.hexagon,
+.nft {
+  position: absolute;
+}
+
+.fistBee {
+  rotate: 80deg;
+  top: -50px;
+  height: 45px;
+  width: 45px;
+  right: 10px;
+}
+
+.hexagon {
+  bottom: 10px;
+  right: 30px;
+  width: 180px;
+  aspect-ratio: 1.24/1;
+}
+
+.secBee {
+  top: 40px;
+  left: 10px;
+  height: 60px;
+  width: 60px;
+}

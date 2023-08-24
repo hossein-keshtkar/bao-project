@@ -1,0 +1,19 @@
+.container {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.bee {
+  position: absolute;
+  transform: rotate(120deg);
+  height: 55px;
+  width: 55px;
+  left: -60px;
+  top: 10px;
+}
+
+.hex {
+  height: 64.1px;
+  width: 64.1px;
+}

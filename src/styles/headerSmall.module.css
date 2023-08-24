@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.bao,
+.register {
+  position: relative;
+}
+
+.bao {
+  padding-right: 20px;
+  margin: 25px auto;
+}
+
+.bao h1 {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.firstBee,
+.secBee,
+.queen {
+  position: absolute;
+}
+
+.firstBee {
+  left: -10px;
+  top: -10px;
+}
+
+.queen {
+  right: -23px;
+  top: -10px;
+}
+
+.organization {
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.register a {
+  text-decoration: none;
+  background: orange;
+  color: rgb(65, 1, 65);
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.secBee {
+  top: -40px;
+  right: -50px;
+  transform: rotate(180deg);
+}

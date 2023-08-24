@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  padding-bottom: 200px;
+  border-bottom: 1px solid #333;
+}
+
+.container > div {
+  position: relative;
+  width: 25%;
+}
+
+.link,
+.social {
+  position: absolute;
+  bottom: -80px;
+}
+
+.link {
+  text-decoration: none;
+  background: #fff;
+  color: #000;
+  transition: all 0.5s ease;
+  font-size: 1.1vw;
+  padding: 15px;
+  text-align: center;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.link:hover {
+  background: #000;
+  box-shadow: 1px 1px 10px #ffffffa7;
+  color: #fff;
+}
+
+.imgs {
+  position: absolute;
+  bottom: -350px;
+  right: -3vw;
+  z-index: -1;
+}
+
+.dashed {
+  aspect-ratio: 1;
+  width: 20vw;
+  z-index: -2;
+}
+
+.bee {
+  position: absolute;
+  bottom: -3.5vh;
+  left: 3vw;
+  aspect-ratio: 1;
+  width: 8vw;
+  z-index: -1;
+}
