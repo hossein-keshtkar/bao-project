@@ -11,11 +11,6 @@ module.exports = merge(common, {
     port: 3000,
     hot: true,
   },
-  output: {
-    headers: {
-      "Cache-Control": "public, max-age=31536000",
-    },
-  },
   module: {
     rules: [
       {
