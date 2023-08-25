@@ -6,16 +6,22 @@ const NavbarHamburger = ({ toggle }) => {
   const [isClicked, setIsClicked] = React.useState(false);
   const ul = React.useRef();
 
-  const classHandler = () => {
+  const addIsClickedClassHandler = () => {
     ul.current.classList.toggle("isClicked");
 
-    setIsClicked((state) => !state);
-
-    toggle(isClicked);
+    setIsClicked((prev) => !prev);
   };
 
+  React.useEffect(() => {
+    toggle(isClicked);
+  }, [isClicked]);
+
   return (
-    <ul className={styles.container} ref={ul} onClick={classHandler}>
+    <ul
+      className={styles.container}
+      ref={ul}
+      onClick={addIsClickedClassHandler}
+    >
       <li></li>
       <li></li>
       <li></li>
