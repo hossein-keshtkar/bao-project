@@ -21,9 +21,14 @@ const Footer = () => {
       <img src={bao} alt="bao" className={styles.bao} />
       <img src={rightFlower} alt="flower" className={styles.rightFlower} />
       <img src={leftFlower} alt="flower" className={styles.leftFlower} />
+
+      <p className="text-center p">
+        Development by <em>Hossein Keshtkar</em>
+        <br />
+        September 2023
+      </p>
     </footer>
   );
 };
 
 export default Footer;
-
