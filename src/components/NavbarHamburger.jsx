@@ -20,6 +20,7 @@ const NavbarHamburger = ({ toggle }) => {
     <ul
       className={styles.container}
       ref={ul}
+      id="navbar-hamburger"
       onClick={addIsClickedClassHandler}
     >
       <li></li>

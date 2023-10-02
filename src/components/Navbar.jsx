@@ -34,20 +34,34 @@ const Navbar = () => {
   });
 
   return (
-    <nav
-      className={styles.container}
-      id="nav"
-      ref={navbar}
-      style={{
-        height: innerWidth <= 768 && isClicked && 200,
-      }}
-    >
-      <a href="#" id="logo">
-        <img src={logo} alt="logo" className={styles.logo} />
-      </a>
-      <NavbarSocial />
-      <NavbarLinks />
-      <NavbarHamburger toggle={hamburgerClassHandler} />
+    <nav className={styles.container} id="nav" ref={navbar}>
+      <div className={styles.topContainer}>
+        <a href="#" id="logo">
+          <img src={logo} alt="logo" className={styles.logo} />
+        </a>
+        <NavbarSocial />
+        <NavbarLinks />
+        <NavbarHamburger toggle={hamburgerClassHandler} />
+      </div>
+      <div
+        className={styles.dropdown}
+        style={{
+          height: innerWidth <= 768 && isClicked && 50,
+          visibility: innerWidth <= 768 && isClicked && "visible",
+        }}
+      >
+        <ul>
+          <li>
+            <a href="#">En Ge</a>
+          </li>
+          <li>
+            <a href="#">Art</a>
+          </li>
+          <li>
+            <a href="#">Connect</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

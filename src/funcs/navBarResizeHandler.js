@@ -3,12 +3,11 @@ export const handleResize = () => {
 
   const logoEl = document.getElementById("logo");
   const navLinks = document.getElementById("navLinks");
-  const nav = document.getElementById("nav");
+  const hamburger = document.getElementById("navbar-hamburger");
 
   if (windowWidth >= 768) {
     navLinks.append(logoEl);
   } else {
-    const hamburger = nav.lastChild;
     hamburger.before(logoEl);
   }
 };
