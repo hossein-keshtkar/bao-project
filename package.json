@@ -1,7 +1,7 @@
 {
   "name": "bao-webpack",
   "version": "1.0.0",
-  "homepage": "https://hossein-keshtkar.github.io/bao-project",
+  "homepage": "https://boredSquidward.github.io/bao-project",
   "private": true,
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
