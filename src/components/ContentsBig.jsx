@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import Fallback from "./Fallback";
 
 const Columns = lazy(() => import("./Columns"));
 const StoryBig = lazy(() => import("./StoryBig"));
@@ -11,7 +12,7 @@ const FightBig = lazy(() => import("./FightBig"));
 
 const ContentsBig = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Fallback />}>
       <StoryBig />
       <Columns />
       <BteamBig />
