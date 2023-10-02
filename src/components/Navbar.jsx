@@ -6,61 +6,40 @@ import NavbarSocial from "./NavbarSocial";
 import NavbarLinks from "./NavbarLinks";
 import NavbarHamburger from "./NavbarHamburger";
 import { handleResize } from "../funcs/navBarResizeHandler";
+import { Image, Nav, NavbarBrand } from "react-bootstrap";
 
 const Navbar = () => {
-  const [isClicked, setIsClicked] = React.useState(false);
-  const [innerWidth, setInnerWidth] = React.useState(0);
-  const navbar = React.useRef();
-
-  const hamburgerClassHandler = (e) => {
-    setIsClicked(e);
-  };
-
-  React.useEffect(() => {
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  React.useEffect(() => {
-    isClicked
-      ? navbar.current.classList.add("dropdown")
-      : navbar.current.classList.remove("dropdown");
-    setInnerWidth(window.innerWidth);
-  });
-
   return (
-    <nav className={styles.container} id="nav" ref={navbar}>
-      <div className={styles.topContainer}>
-        <a href="#" id="logo">
-          <img src={logo} alt="logo" className={styles.logo} />
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
+          <Image src={logo} width={50} height={50} />
         </a>
-        <NavbarSocial />
-        <NavbarLinks />
-        <NavbarHamburger toggle={hamburgerClassHandler} />
-      </div>
-      <div
-        className={styles.dropdown}
-        style={{
-          height: innerWidth <= 768 && isClicked && 50,
-          visibility: innerWidth <= 768 && isClicked && "visible",
-        }}
-      >
-        <ul>
-          <li>
-            <a href="#">En Ge</a>
-          </li>
-          <li>
-            <a href="#">Art</a>
-          </li>
-          <li>
-            <a href="#">Connect</a>
-          </li>
-        </ul>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className=" collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Link
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
